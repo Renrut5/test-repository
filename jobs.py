@@ -33,7 +33,7 @@ from nautobot.core.celery import register_jobs
 
 # In a more complex Job, you would probably want to move the DiffSyncModel subclasses into a separate Python module(s).
 
-name = "SSoT Examples Git"  # pylint: disable=invalid-name
+name = "SSoT Examples Git New"  # pylint: disable=invalid-name
 
 
 class LocationTypeModel(NautobotModel):
@@ -822,7 +822,7 @@ class ExampleDataSource(DataSource):
     class Meta:
         """Metaclass attributes of ExampleDataSource."""
 
-        name = "Example Data Source Git"
+        name = "Example Data Source Git New"
         description = 'Example "data source" Job for loading data into Nautobot from another system.'
         data_source = "Nautobot (remote)"
         data_source_icon = static("img/nautobot_logo.png")
@@ -920,7 +920,7 @@ class ExampleDataTarget(DataTarget):
     class Meta:
         """Metaclass attributes of ExampleDataTarget."""
 
-        name = "Example Data Target Git"
+        name = "Example Data Target Git New"
         description = 'Example "data target" Job for syncing data from Nautobot to another system'
         data_target = "Nautobot (remote)"
         data_target_icon = static("img/nautobot_logo.png")
