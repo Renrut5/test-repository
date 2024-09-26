@@ -20,7 +20,7 @@ from nautobot.extras.models import ExternalIntegration, Role, Status
 from nautobot.ipam.models import IPAddress, Namespace, Prefix
 from nautobot.tenancy.models import Tenant
 
-from diffsync import DiffSync
+from diffsync import Adapter as DiffSync
 from diffsync.enum import DiffSyncFlags
 from diffsync.exceptions import ObjectNotFound
 
